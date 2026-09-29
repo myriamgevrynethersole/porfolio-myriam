@@ -5,9 +5,8 @@ import Header from "./_components/header"
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Header/>
-      </main>
+      <Header/>
+      <main className={styles.main}></main>
     </div>
   );
 }

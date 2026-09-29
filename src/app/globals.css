@@ -47,3 +47,12 @@ a {
   font-family: Anak Bijak;
   src: url(../../public/polices/Anak-Bijak.ttf);
 }
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../../public/polices/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Montserrat Italik;
+  src: url(../../public/polices/Montserrat-Italic-VariableFont_wght.ttf);
+}
