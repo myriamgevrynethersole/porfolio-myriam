@@ -2,8 +2,8 @@
     margin-top: 600px;
 
     .Image{
+        height: 600px;
         background-image: url(../../../public/images/svg/forme01.svg);
-        
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -17,11 +17,11 @@
      padding: 50px;
     }
     .Image_Moi{
-        
-        height: 600px;
+        height: inherit;
         mask-image: url(../../../public/images/svg/forme02.svg);
         mask-position: center;
         mask-repeat: no-repeat;
+        bottom: 0;
     }
     .Contactez-Moi{
         margin-top: 50px;
