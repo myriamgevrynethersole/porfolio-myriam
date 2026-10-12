@@ -15,19 +15,13 @@ const Header = () => {
       </div>
       <div className="DivTittle">
         <h1 className="Tittle"><span>Porfolio de</span><br /><span>Myriam</span><br /><span>Gévry-Nethersole</span></h1>
+        <img className="images-vigne01" src="/images/vigne01.svg" alt="" />
+        <img className="images-vigne02" src="/images/vigne02.svg" alt="" />
       </div>
-    
+        <div className="image-fond"></div>
+
     </header>
   );
 };
 
 export default Header;
-
-const IconeMenu = () => {
-  <svg className="IconeMenu" width="300" height="130" xmlns="http://www.w3.org/2000/svg">
-    <rect width="200" height="100" x="10" y="10" rx="20" ry="20" />
-  </svg>
-}
-const IconeClose = () => {
-
-}
