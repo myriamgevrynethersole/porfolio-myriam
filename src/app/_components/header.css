@@ -98,7 +98,8 @@ span:nth-child(5) {
     overflow-x: hidden;
     z-index: -1;
     position: absolute;
-    right: -10;
+    right: -5vw;
+
     bottom: -600;
     background-image: url(../../../public/images/svg/fond01.svg);
     height: 700px;
