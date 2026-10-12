@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280.25 280.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d402d;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #fffaee;
+        stroke-linecap: round;
+        stroke-miterlimit: 133.33;
+        stroke-width: 12.02px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" y="0" width="280.25" height="280.25"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" y="0" width="280.25" height="280.25"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-2" x="70.06" y="70.06" width="140.12" height="140.12"/>
+    </clipPath>
+  </defs>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="icone_phone_background">
+      <g class="cls-6">
+        <g class="cls-4">
+          <path class="cls-1" d="M280.25,140.12c0,77.39-62.73,140.12-140.12,140.12S0,217.52,0,140.12,62.73,0,140.12,0s140.12,62.73,140.12,140.12"/>
+        </g>
+        <g class="cls-5">
+          <path class="cls-3" d="M124.41,86.61l5.19,9.31c4.68,8.41,2.8,19.42-4.57,26.81,0,0-8.96,8.96,7.28,25.21,16.25,16.23,25.21,7.29,25.21,7.29,7.39-7.39,18.41-9.27,26.81-4.59l9.31,5.19c12.7,7.09,14.2,24.88,3.04,36.04-6.71,6.69-14.92,11.92-23.99,12.26-15.29.58-41.23-3.28-67.26-29.31-26.03-26.03-29.89-51.97-29.31-67.26.34-9.07,5.56-17.28,12.26-23.98,11.15-11.15,28.96-9.65,36.04,3.03Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

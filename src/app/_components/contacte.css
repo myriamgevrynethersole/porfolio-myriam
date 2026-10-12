@@ -1,0 +1,10 @@
+.Contacte{
+    padding: 16px 0;
+    display: flex;
+    gap: 45px;
+    align-items: center;
+
+    .Icone{
+        height: 60px;
+    }
+}
