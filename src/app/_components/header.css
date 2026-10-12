@@ -1,0 +1,109 @@
+.Header {
+    position: relative;
+    background-color: var(--light-green);
+    width: 100svw;
+    height: 100svh;
+    z-index: 10;
+}
+
+.Logo {
+    height: 65px;
+    width: 150px;
+    background-image: url("../../../public/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.PageTop {
+    z-index: 5;
+    width: 100svw;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background-color: hsla(41, 100%, 96%, 0.75);
+    
+}
+
+.IconeMenu {
+    fill: var(--orange);
+}
+
+
+.DivTittle {
+    padding: 214px 64px 64px;
+    height: 100%;
+    z-index: 100;
+
+}
+
+.Tittle {
+    border: double 10px var(--light-green);
+    display: grid;
+    align-content: center;
+    background-color: var(--white);
+    height: 100%;
+    font-family: Anak Bijak;
+    z-index: 100;
+
+}
+
+span:nth-child(1) {
+    margin-right: 300px;
+    font-size: 40px;
+    text-align: right;
+    line-height: 100px;
+
+}
+
+span:nth-child(3) {
+    margin-left: 300px;
+    font-size: 200px;
+    text-align: left;
+    line-height: 100px;
+}
+
+span:nth-child(5) {
+    margin-right: 300px;
+    text-align: right;
+    font-size: 64px;
+}
+
+.images-vigne01, .images-vigne02{
+    position: absolute;
+   
+
+}
+
+.images-vigne01{
+   
+    height: 350px;
+    right: -60px;
+    top: 80px;
+    rotate: 8deg;
+    transform-origin: right;
+}
+
+.images-vigne02{
+   
+    height: 450px;
+    left: -60px;
+    bottom: -200px;
+    rotate: 5deg;
+    transform-origin: left;
+}
+.image-fond{
+    z-index: -1;
+    position: absolute;
+    right: -10;
+    bottom: -600;
+    background-image: url(../../../public/images/fond01.svg);
+    height: 700px;
+    width: 110vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
