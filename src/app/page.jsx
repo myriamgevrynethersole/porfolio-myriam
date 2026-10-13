@@ -1,15 +1,36 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Header from "./_components/header"
-import About_Me from "./_components/about-me"
+'use client';
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { useRouter } from 'next/navigation';
 
-export default function Home() {
+
+const AnimationDuLoader = () => {
+
+  // création du routeur (à l'intérieur de la composante)
+  const router = useRouter();
+  const scopeRef = useRef();
+
+  useGSAP(() => {
+    // plus tard, à la création de la timeline
+    const tl = gsap.timeline({
+      onComplete: () => {
+        router.replace('/page-principale');
+      }
+    });
+
+    tl.to(".Image-Loader", {
+      x: 200,
+      duration: 2
+    });
+
+  }, { scope: scopeRef});
+
   return (
-    <div className={styles.page}>
-      <Header/>
-      <main className={styles.main}>
-         <About_Me/>
-      </main>
+    <div ref={scopeRef} className='Loader'>
+      <img className='Image-Loader' src="/images/svg/forme01.svg" alt="" />
     </div>
-  );
-}
+  )
+};
+
+export default AnimationDuLoader;
