@@ -1,0 +1,56 @@
+.Loader {
+    max-height: 100vh;
+    position: relative;
+
+
+}
+
+.Percent-Loader {
+    position: absolute;
+    bottom: 3%;
+    z-index: 10;
+    place-self: center;
+    font-size: 64px;
+    color: var(--dark-green);
+    font-family: Anak Bijak;
+}
+
+.Images-Loader {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+svg {
+    scale: 1.5;
+    position: absolute;
+    overflow: visible;
+
+    bottom: 75%;
+    z-index: 1;
+
+
+    .cls-5,
+    .cls-6 {
+        fill: none;
+    }
+
+    .cls-7 {
+        fill: #1d402d;
+    }
+
+    .cls-12 {
+        fill: #326e4d;
+    }
+
+    .cls-6 {
+        stroke: #326e4d;
+        stroke-miterlimit: 10;
+        stroke-width: 13px;
+    }
+
+    .cls-14 {
+        fill: #4aa372;
+    }
+
+}
