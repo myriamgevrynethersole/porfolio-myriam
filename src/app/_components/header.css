@@ -62,12 +62,14 @@ span:nth-child(3) {
     font-size: 200px;
     text-align: left;
     line-height: 100px;
+    color: var(--rust-orange);
 }
 
 span:nth-child(5) {
     margin-right: 300px;
     text-align: right;
     font-size: 64px;
+    color: var(--rust-orange);
 }
 
 .images-vigne01, .images-vigne02{
