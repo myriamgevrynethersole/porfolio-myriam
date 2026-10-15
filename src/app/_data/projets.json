@@ -2,10 +2,9 @@
     {
         "id": "resto",
         "nom": "Izakaya Hiroshi",
-        "video": {
-            "desktop": "/medias_projet01/resto-desktop-showcase.mp4",
-            "mobile": "/medias_projet01/resto-mobile-showcase.mp4"
-        },
+        "video": "/medias_projet01/resto-desktop-showcase.mp4",
+        "video-mobile": "/medias_projet01/resto-mobile-showcase.mp4",
+        
         "contexte": "",
         "images": [
             "/medias_projet01/resto-croquis01.jpg",
@@ -19,7 +18,7 @@
     {
         "id": "brume",
         "nom": "Brume",
-        "video": "",
+        "video": "/medias_projet02/brume-gameplay.mp4",
         "contexte": "",
         "images": [
             "/medias_projet02/brume-esquisse.jpeg",

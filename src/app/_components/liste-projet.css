@@ -2,26 +2,30 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: var(--rust-orange);
+    
 
     video{
         width:40vw;
     }
+    
     h3{
         position: absolute;
         bottom: 20px;
-        background-color: #fff9ecbe;
+        background-color: #0000046b;
         padding: 5px 15px;
-        color: var(--dark-green);
         border-radius: 50px;
+        color: var(--yellow-green); 
     }
-    
+   
     
 }
 .Projet{
-    margin: 50px;
+    margin: 30px 50px;
     position: relative;
     width: fit-content;
 }
+
 .Projet:nth-child(odd){
     align-self: flex-end;
        h3{
