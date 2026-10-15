@@ -1,0 +1,40 @@
+.Liste-Projet{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    video{
+        width:40vw;
+    }
+    h3{
+        position: absolute;
+        bottom: 20px;
+        background-color: #fff9ecbe;
+        padding: 5px 15px;
+        color: var(--dark-green);
+        border-radius: 50px;
+    }
+    
+    
+}
+.Projet{
+    margin: 50px;
+    position: relative;
+    width: fit-content;
+}
+.Projet:nth-child(odd){
+    align-self: flex-end;
+       h3{
+        left: 30px;
+        
+    }
+}
+
+.Projet:nth-child(even){
+    align-self: flex-start;
+       h3{
+        right: 30px;
+        
+    }
+}
+

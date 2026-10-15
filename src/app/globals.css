@@ -48,6 +48,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+section{
+    padding-bottom: 150px;
+}
+
 
 :root {
   --black: #000004;
