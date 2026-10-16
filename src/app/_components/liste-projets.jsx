@@ -7,7 +7,7 @@ const Liste = () => {
   return (
     <section className="Liste-Projet">
         <h2>Mes projets</h2>
-        {projetData.map((p) => <Projet key={p.id} video={p.video} titre={p.nom}/>)}
+        {projetData.map((p) => <Projet key={p.id} video={p.video} titre={p.nom} id={p.id}/>)}
         
 
     </section>
