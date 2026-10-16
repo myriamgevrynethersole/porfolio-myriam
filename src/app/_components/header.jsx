@@ -1,11 +1,13 @@
 import style from "./header.css"
+import TopPage from "./top-page"
 
 const Header = () => {
   return (
     <header className="Header">
-      <div className="PageTop">
+      <TopPage/>
+      {/* <div className="PageTop">
         <div className="Logo"></div>
-      </div>
+      </div> */}
       <div className="DivTittle">
         <h1 className="Tittle"><span>Porfolio de</span><br /><span>Myriam</span><br /><span>Gévry-Nethersole</span></h1>
         <img className="images-vigne01" src="/images/svg/vigne01.svg" alt="" />
