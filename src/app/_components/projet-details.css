@@ -29,27 +29,27 @@
 }
 
 .Approche {
-    height: 100vh;
+    height: 150vh;
+}
+
+.Images-Scroller {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    gap: 30px;
+
+    div {
+        width: 500px;
+        height: 500px;
+        background-color: var(--dark-green);
 
 
-    .images-scroller {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        div {
-            
-            width: 500px;
-            height: 500px;
-            background-color: var(--dark-green);
-            margin: 0 30px 0 0 ;
-        }
-
-        img{
-           object-fit: contain;
-            width: inherit;
-            height: inherit;
-        }
     }
 
-
+    img {
+        object-fit: contain;
+        width: inherit;
+        height: inherit;
+    }
 }
