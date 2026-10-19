@@ -5,7 +5,7 @@ const Projet = ({ video, titre, id}) => {
     return (
         <Link className="Projet" href={`/projets/${id}`} >
             <div>
-                <video src={video}></video>
+                <video src={video} autoPlay muted></video>
                 <h3>{titre}</h3>
             </div>
         </Link >

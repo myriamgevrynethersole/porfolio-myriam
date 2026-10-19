@@ -1,6 +1,7 @@
-import style from "../../globals.css"
+import style from "../../page.module.css"
 import projetData from "../../_data/projets.json"
 import TopPage from "../../_components/top-page"
+import ProjetDetails from "../../_components/projet-details"
 
 
 const PageProjet = async ({ params }) => {
@@ -13,10 +14,9 @@ const PageProjet = async ({ params }) => {
                 <TopPage />
             </header>
             {/* Affiche le projet: synthese */}
-            <main>
+            <main className="Page-Detail">
                 <h1 className="Titre-Projet">{projet.nom}</h1>
-                <div className="Contexte"></div>
-                <div className="Approche"></div>
+                <ProjetDetails projet={projet}/>
             </main>
         </div>)
 }

@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRouter } from 'next/navigation';
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { preloadMedias } from "./_components/preloadMedias";
 
 
 
@@ -13,16 +14,74 @@ const AnimationDuLoader = () => {
   // création du routeur (à l'intérieur de la composante)
   const router = useRouter();
   const scopeRef = useRef();
+  const urls = [
+    "/projet01/resto-desktop-showcase.mp4",
+    "/projet01/resto-mockup.gif",
+    "/projet01/resto-croquis01.jpg",
+    "/projet01/resto-croquis02.jpg",
+    "/projet01/resto-croquis03.jpg",
+    "/projet01/resto-resultat01.png",
+    "/projet01/resto-resultat02.png",
+    "/projet02/brume-gameplay.mp4",
+    "/projet02/brume-mockup.gif",
+    "/projet02/brume-esquisse.jpg",
+    "/projet02/brume-charte-personnage.jpg",
+    "/projet02/brume-maquette-fond.jpg",
+    "/projet02/brume-tuiles.png",
+    "/projet02/brume-objets.jpg",
+    "/projet03/rh-mockup.gif",
+    "/projet03/rh-header-maquette-v01.png",
+    "/projet03/rh-header-maquette-v02.png",
+    "/projet03/rh-main-maquette-v01.png",
+    "/projet03/rh-main-maquette-v02.png",
+    "/projet03/rh-footer-maquette-v01.png",
+    "/projet03/rh-footer-maquette-v02.png",
+    "/projet03/rh-choix-final-maquette.png",
+    "/projet03/rh-resultat.png",
+    "/projet04/aventure-hivernal-gameplay.mp4",
+    "/projet04/aventure-hivernal-mockup.gif",
+    "/projet04/aventure-hivernal-perso.png",
+    "/projet04/aventure-hivernal-ennemie.png",
+    "/projet04/aventure-hivernal-tuiles.png",
+    "/projet04/aventure-hivernal-projectiles.png",
+    "/projet04/aventure-hivernal-clees.png",
+    "/projet04/aventure-hivernal-fond.png"
+  ]
 
   gsap.registerPlugin(DrawSVGPlugin);
 
   useGSAP(() => {
     // plus tard, à la création de la timeline
     const tl = gsap.timeline({
+      paused: true,
       onComplete: () => {
         router.replace('/page-principale');
       }
     });
+
+    let limite = 0;
+    let cancelled = false;
+
+    // importer preloadMedias au prélable,
+    // progress contient une valeur entre 0 et 1
+    preloadMedias(urls, (progress) => {
+      console.log(progress);
+      if (cancelled) return;
+      limite = progress;
+
+      // fait progresser l'animation si la partie chargée est supérieure
+      // à la portion déjà jouée
+      if (tl.progress() < limite) {
+        tl.play();
+      }
+    });
+
+    tl.eventCallback("onUpdate", () => {
+      if (tl.progress() >= limite) {
+        tl.pause();
+      }
+    });
+
 
     tl.to(".Percent-Loader span", {
       innerText: 100,
@@ -31,89 +90,94 @@ const AnimationDuLoader = () => {
         innerText: 1,
       }
     })
-    .fromTo(".tige", {
-      drawSVG: "0%",
-      
-    }, {
-      drawSVG: "100%",
-      duration: 5,
-    },"<")
+      .fromTo(".tige", {
+        drawSVG: "0%",
 
-    .to(".branche01",{
-      duration: 5,
-      keyframes:{
-        "0%":{drawSVG: "0%"},
-        "10%":{drawSVG: "0%"},
-        "20%":{drawSVG: "100%"},
-      }
-    },"<")
-     .to("#feuille05",{
-      duration: 5,
-      keyframes:{
-        "0%":{display:"none"},
-        "20%":{display:"none"},
-        "25%":{display:"block"},
-      }
-    },"<")
-    .to(".branche02",{
-      duration: 5,
-      keyframes:{
-        "0%":{drawSVG: "0%"},
-        "20%":{drawSVG: "0%"},
-        "30%":{drawSVG: "100%"},
-      }
-    },"<")
-    .to("#feuille04",{
-      duration: 5,
-      keyframes:{
-        "0%":{display:"none"},
-        "30%":{display:"none"},
-        "35%":{display:"block"},
-      }
-    },"<")
-    .to(".branche03",{
-      duration: 5,
-      keyframes:{
-        "0%":{drawSVG: "0%"},
-        "30%":{drawSVG: "0%"},
-        "40%":{drawSVG: "100%"},
-      }
-    },"<")
-    .to("#feuille03",{
-      duration: 5,
-      keyframes:{
-        "0%":{display:"none"},
-        "40%":{display:"none"},
-        "45%":{display:"block"},
-      }
-    },"<")
+      }, {
+        drawSVG: "100%",
+        duration: 5,
+      }, "<")
 
-    .to(".branche04",{
-      duration: 5,
-      keyframes:{
-        "0%":{drawSVG: "0%"},
-        "55%":{drawSVG: "0%"},
-        "65%":{drawSVG: "100%"},
-      }
-    },"<")
-    .to("#feuille02",{
-      duration: 5,
-      keyframes:{
-        "0%":{display:"none"},
-        "65%":{display:"none"},
-        "70%":{display:"block"},
-      }
-    },"<")
-     .to("#feuille01",{
-      duration: 5,
-      keyframes:{
-        "0%":{display:"none"},
-        "90%":{display:"none"},
-        "95%":{display:"block"},
-      }
-    },"<")
-    
+      .to(".branche01", {
+        duration: 5,
+        keyframes: {
+          "0%": { drawSVG: "0%" },
+          "10%": { drawSVG: "0%" },
+          "20%": { drawSVG: "100%" },
+        }
+      }, "<")
+      .to("#feuille05", {
+        duration: 5,
+        keyframes: {
+          "0%": { display: "none" },
+          "20%": { display: "none" },
+          "25%": { display: "block" },
+        }
+      }, "<")
+      .to(".branche02", {
+        duration: 5,
+        keyframes: {
+          "0%": { drawSVG: "0%" },
+          "20%": { drawSVG: "0%" },
+          "30%": { drawSVG: "100%" },
+        }
+      }, "<")
+      .to("#feuille04", {
+        duration: 5,
+        keyframes: {
+          "0%": { display: "none" },
+          "30%": { display: "none" },
+          "35%": { display: "block" },
+        }
+      }, "<")
+      .to(".branche03", {
+        duration: 5,
+        keyframes: {
+          "0%": { drawSVG: "0%" },
+          "30%": { drawSVG: "0%" },
+          "40%": { drawSVG: "100%" },
+        }
+      }, "<")
+      .to("#feuille03", {
+        duration: 5,
+        keyframes: {
+          "0%": { display: "none" },
+          "40%": { display: "none" },
+          "45%": { display: "block" },
+        }
+      }, "<")
 
+      .to(".branche04", {
+        duration: 5,
+        keyframes: {
+          "0%": { drawSVG: "0%" },
+          "55%": { drawSVG: "0%" },
+          "65%": { drawSVG: "100%" },
+        }
+      }, "<")
+      .to("#feuille02", {
+        duration: 5,
+        keyframes: {
+          "0%": { display: "none" },
+          "65%": { display: "none" },
+          "70%": { display: "block" },
+        }
+      }, "<")
+      .to("#feuille01", {
+        duration: 5,
+        keyframes: {
+          "0%": { display: "none" },
+          "90%": { display: "none" },
+          "95%": { display: "block" },
+        }
+      }, "<")
+
+
+    return () => {
+      cancelled = true;
+      gsap.killTweensOf(tl);
+      tl.kill();
+    };
 
   }, { scope: scopeRef });
 

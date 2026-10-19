@@ -1,0 +1,55 @@
+.ProjetDetails {
+    margin: 0px 80px;
+
+}
+
+.Contexte {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.Videos {
+    width: 50vw;
+    position: relative;
+    margin: 0px 64px;
+}
+
+.Video {
+    width: 50vw;
+
+}
+
+.Mockup {
+    position: absolute;
+    height: 300px;
+    width: auto;
+    left: -50px;
+    top: 200px;
+}
+
+.Approche {
+    height: 100vh;
+
+
+    .images-scroller {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        div {
+            
+            width: 500px;
+            height: 500px;
+            background-color: var(--dark-green);
+            margin: 0 30px 0 0 ;
+        }
+
+        img{
+           object-fit: contain;
+            width: inherit;
+            height: inherit;
+        }
+    }
+
+
+}

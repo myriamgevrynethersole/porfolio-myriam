@@ -57,6 +57,9 @@ section{
     padding-bottom: 150px;
     padding-top: 50px;
 }
+.Page-Detail{
+  padding-top: 125px;
+}
 
 
 :root {
