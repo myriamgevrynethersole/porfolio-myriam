@@ -1,4 +1,4 @@
-import styles from "../page.module.css";
+import style from "../page.module.css";
 import Header from "../_components/header";
 import About_Me from "../_components/about-me";
 import Liste_Projet from "../_components/liste-projets";

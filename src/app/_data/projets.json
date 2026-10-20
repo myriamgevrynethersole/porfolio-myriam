@@ -3,9 +3,9 @@
         "id": "resto",
         "nom": "Izakaya Hiroshi",
         "video": "/projet01/resto-desktop-showcase.mp4",
-        "video-mockup": "",
+        "mockup": "/projet01/resto-mockup.gif",
         
-        "contexte": "",
+        "contexte": "Contexte du projet resto",
         "images": [
             "/projet01/resto-croquis01.jpg",
             "/projet01/resto-croquis02.jpg",
@@ -13,28 +13,28 @@
             "/projet01/resto-resultat01.png",
             "/projet01/resto-resultat02.png"
         ],
-        "approche": ""
+        "approche": "Approche du projet resto"
     },
     {
         "id": "brume",
         "nom": "Brume",
         "video": "/projet02/brume-gameplay.mp4",
-        "video-mockup": "",
+        "mockup": "/projet02/brume-mockup.gif",
         "contexte": "",
         "images": [
-            "/projet02/brume-esquisse.jpeg",
+            "/projet02/brume-esquisse.jpg",
             "/projet02/brume-charte-personnage.jpg",
             "/projet02/brume-maquette-fond.jpg",
-            "/projet02/brume-maquette-tuiles.jpg",
-            "/projet02/brume-maquette-objets.jpg"
+            "/projet02/brume-tuiles.png",
+            "/projet02/brume-objets.jpg"
         ],
         "approche": ""
     },
     {
         "id": "rh",
         "nom": "RH Solution",
-        "video": "projet03/rh-solutions-showcase.mp4",
-        "video-mockup": "",
+        "video": "/projet03/rh-solutions-showcase.mp4",
+        "mockup": "/projet03/rh-mockup.gif",
         "contexte": "",
         "images": [
             "/projet03/rh-header-maquette-v01.png",
@@ -52,7 +52,7 @@
         "id": "aventure",
         "nom": "Aventure Hivernal",
         "video": "/projet04/aventure-hivernal-gameplay.mp4",
-        "video-mockup": "",
+        "mockup": "/projet04/aventure-hivernal-mockup.gif",
         "contexte": "",
         "images": [
             "/projet04/aventure-hivernal-perso.png",
