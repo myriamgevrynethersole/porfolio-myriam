@@ -28,28 +28,64 @@
     top: 200px;
 }
 
-.Approche {
-    height: 150vh;
+.Slide {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: top;
+    border-radius: 30px;
+    padding: 50px;
+    height: 400px;
+
+    
 }
 
-.Images-Scroller {
-    margin-top: 20px;
+.Slide:nth-child(4n+1) {
+    background-color: var(--rust-orange);
+}
+
+.Slide:nth-child(4n+2) {
+    background-color: var(--green);
+}
+
+.Slide:nth-child(4n+3) {
+    background-color: var(--orange);
+}
+
+.Slide:nth-child(4n) {
+    background-color: var(--light-green);
+}
+
+
+.Images {
     display: flex;
     flex-direction: row;
-    width: min-content;
+    flex-wrap: wrap;
     gap: 30px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-gutter: stable both-edges;
+    place-self: center;
 
-    div {
-        width: 500px;
-        height: 500px;
-        background-color: var(--dark-green);
 
 
-    }
+
+
 
     img {
-        object-fit: contain;
-        width: inherit;
-        height: inherit;
+        padding: 0 10px;
+        width: 400px;
     }
+}
+
+.Images::-webkit-scrollbar {
+    width: 5px;
+}
+
+.Images::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.Images::-webkit-scrollbar-thumb {
+    background: rgba(255, 249, 236, 0.5);
+    border-radius: 999px;
 }
