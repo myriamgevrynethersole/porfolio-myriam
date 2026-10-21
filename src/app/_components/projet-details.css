@@ -1,11 +1,15 @@
 .ProjetDetails {
     margin: 0px 80px;
+    overflow-y: hidden;
 
 }
 
 .Contexte {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.Approche{
     height: 100vh;
 }
 
@@ -34,7 +38,7 @@
     place-items: top;
     border-radius: 30px;
     padding: 50px;
-    height: 400px;
+    height: 600px;
 
     
 }
@@ -61,7 +65,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    height: 300px;
+    height: 500px;
     overflow-y: scroll;
     scrollbar-gutter: stable both-edges;
     place-self: center;
