@@ -4,64 +4,159 @@
         "nom": "Izakaya Hiroshi",
         "video": "/projet01/resto-desktop-showcase.mp4",
         "mockup": "/projet01/resto-mockup.gif",
-        
-        "contexte": "Contexte du projet resto",
-        "images": [
-            "/projet01/resto-croquis01.jpg",
-            "/projet01/resto-croquis02.jpg",
-            "/projet01/resto-croquis03.jpg",
-            "/projet01/resto-resultat01.png",
-            "/projet01/resto-resultat02.png"
-        ],
-        "approche": "Approche du projet resto"
+        "contexte": "Dans le cadre du cours de Web 4, nous devions concevoir un site web afin de promouvoir l’ouverture d’un nouvel établissement de cuisine japonaise par Hiroshi Takahashi. Le site devait principalement permettre aux utilisateurs de consulter un menu interactif, tout en leur offrant une expérience utilisateur optimale.",
+        "slides": [
+            {
+                "id": 1,
+                "approche": "Pour commencer, j’ai conçu l’identité graphique du restaurent. Pour ce faire, j’ai dû concevoir le logos du restaurent, choisir les polices de caractère ainsi que les couleurs qui devra être utiliser pour le site.",
+                "images": [
+                    "/projet01/resto-charte01.jpg",
+                    "/projet01/resto-charte02.jpg",
+                    "/projet01/resto-charte03.jpg"
+                ]
+            },
+            {
+                "id": 2,
+                "approche": "Par la suite, j’ai conçu les croquis des différents médias nécessaires à la conception du site web.",
+                "images": [
+                    "/projet01/resto-croquis01.jpg",
+                    "/projet01/resto-croquis02.jpg",
+                    "/projet01/resto-croquis03.jpg"
+                ]
+            },
+            {
+                "id": 3,
+                "approche": "Puis, j’ai reproduit ces images en format vectoriel afin de pouvoir l’intégrer au site web",
+                "images": [
+                    "/projet01/resto-resultat01.png",
+                    "/projet01/resto-resultat02.png"
+                ]
+            }
+        ]
     },
     {
         "id": "brume",
         "nom": "Brume",
         "video": "/projet02/brume-gameplay.mp4",
         "mockup": "/projet02/brume-mockup.gif",
-        "contexte": "",
-        "images": [
-            "/projet02/brume-esquisse.jpg",
-            "/projet02/brume-charte-personnage.jpg",
-            "/projet02/brume-maquette-fond.jpg",
-            "/projet02/brume-tuiles.png",
-            "/projet02/brume-objets.jpg"
-        ],
-        "approche": ""
+        "contexte": "Dans le cadre du cours de jeu4, nous devions concevoir un jeu d’émergence de type \"platformer\" pour un concours de jeu vidéo organisé par l’école où les étudiants des autres programmes tente d’accumuler le plus de points possibles de points afin de gagner un prix.",
+        "slides": [
+            {
+                "id": 1,
+                "approche": "Pour commencer, j’ai conçu le personnage principal. J’ai d’abord créé un croquis du personnage de face et de côte. Ensuite, je l’ai recréé en couleur et en format vectoriel.",
+                "images": [
+                    "/projet02/brume-esquisse.jpg",
+                    "/projet02/brume-charte-personnage.jpg"
+                ]
+            },
+            {
+                "id": 2,
+                "approche": "Par la suite, j’ai conçu un arrière-plan qui devait faire un défilement en parallaxe. Pour ce faire j’ai d’abord créé une première version sous forme de croquis. Puis, j’ai conçu la version finale composée de cinq plans qui se répète verticalement et horizontalement. Ces plans se déplacent en parallaxe dans le jeu afin de créer une impression de profondeur.",
+                "images": [
+                    "/projet02/brume-maquette-fond.jpg",
+                    "/projet02/brume-fond-final.jpg"
+                ]
+            },
+            {
+                "id": 3,
+                "approche": "Finalement, j’ai conçu des tuiles intelligentes pour créer les plateformes, ainsi que des objets animés avec lesquels l’utilisateur peut interagir.",
+                "images": [
+                    "/projet02/brume-tuiles.png",
+                    "/projet02/brume-objets.jpg"
+                ]
+            }
+        ]
     },
     {
         "id": "rh",
         "nom": "RH Solution",
         "video": "/projet03/rh-solutions-showcase.mp4",
         "mockup": "/projet03/rh-mockup.gif",
-        "contexte": "",
-        "images": [
-            "/projet03/rh-header-maquette-v01.png",
-            "/projet03/rh-header-maquette-v02.png",
-            "/projet03/rh-main-maquette-v01.png",
-            "/projet03/rh-main-maquette-v02.png",
-            "/projet03/rh-footer-maquette-v01.png",
-            "/projet03/rh-footer-maquette-v02.png",
-            "/projet03/rh-choix-final-maquette.png",
-            "/projet03/rh-resultat.png"
-        ],
-        "approche": ""
+        "contexte": "Dans le cadre du cours de Design 3 je devais concevoir les maquettes d’un site web pour RH-Solution, un cabinet expert en gestion des ressources humaines. Ce projet avait pour objectif de donner un aperçu du site avant que l’entreprise débute son développement. Le site visait, quant à lui, à présenter les services offerts par la compagnie.",
+        "slides": [
+            {
+                "id": 1,
+                "approche": "Pour commencer, j’ai conçu deux versions UX de l’en-tête (\"header\") du site web.",
+                "images": [
+                    "/projet03/rh-header-maquette-v01.png",
+                    "/projet03/rh-header-maquette-v02.png"
+                ]
+            },
+            {
+                "id": 2,
+                "approche": "J’ai ensuite conçu deux versions UX de la section principale (\"main\") du site web.",
+                "images": [
+                    "/projet03/rh-main-maquette-v01.png",
+                    "/projet03/rh-main-maquette-v02.png"
+                ]
+            },
+            {
+                "id": 3,
+                "approche": "J’ai également conçu deux versions UX du pied de page (\"footer\") du site web.",
+                "images": [
+                    "/projet03/rh-footer-maquette-v01.png",
+                    "/projet03/rh-footer-maquette-v02.png"
+                ]
+            },
+            {
+                "id": 4,
+                "approche": "J’ai finalement sélectionné et combiné les meilleures versions de chaque composant afin de créer la maquette UX finale du site web.",
+                "images": [
+                    "/projet03/rh-choix-final-maquette.png"
+                ]
+            },
+            {
+                "id": 5,
+                "approche": "Par la suite, j’ai ajouté les médias, les couleurs et la typographie à la maquette UX afin de créer une maquette UI qui représente plus fidèlement l’apparence du futur site web.",
+                "images": [
+                    "/projet03/rh-resultat.png"
+                ]
+            }
+        ]
     },
     {
         "id": "aventure",
         "nom": "Aventure Hivernal",
         "video": "/projet04/aventure-hivernal-gameplay.mp4",
         "mockup": "/projet04/aventure-hivernal-mockup.gif",
-        "contexte": "",
-        "images": [
-            "/projet04/aventure-hivernal-perso.png",
-            "/projet04/aventure-hivernal-ennemie.png",
-            "/projet04/aventure-hivernal-tuiles.png",
-            "/projet04/aventure-hivernal-projectiles.png",
-            "/projet04/aventure-hivernal-clees.png",
-            "/projet04/aventure-hivernal-fond.png"
-        ],
-        "approche": ""
+        "contexte": "Dans le cadre du cours de Jeu 3, nous devions concevoir un jeu de progression n 2D comprenant trois salles. La première salle devait contenir des obstacles que le joueur devait éviter, la deuxième salle devait contenir un casse-tête que le joueur doit résoudre afin d’accéder à la dernière salle contenant l’ennemie final.",
+        "slides": [
+            {
+                "id": 1,
+                "approche": "Pour commencer j’ai créé le personnage principal, un pingouin, que j’ai animé en fonction de la direction dans laquelle le joueur se déplace.",
+                "images": [
+                    "/projet04/aventure-hivernal-perso.png"
+                ]
+            },
+            {
+                "id": 2,
+                "approche": "Par la suite, j’ai conçu et animé l’ennemi dans son état normal ainsi que dans son état de mort.",
+                "images": [
+                    "/projet04/aventure-hivernal-ennemie.png"
+                ]
+            },
+            {
+                "id": 3,
+                "approche": "Ensuite, j’ai créé les projectiles pour la première salle, pour le joueur ainsi que pour l’ennemies. Puis, j’ai créé les clés pour le casse-tête.",
+                "images": [
+                    "/projet04/aventure-hivernal-projectiles.png",
+                    "/projet04/aventure-hivernal-clees.png"
+                ]
+            },
+            {
+                "id": 4,
+                "approche": "J'ai ensuite conçu des tuiles intelligentes",
+                "images": [
+                    "/projet04/aventure-hivernal-tuiles.png"
+                ]
+            },
+            {
+                "id": 5,
+                "approche": "Finalement, j’ai créé un arrière-plan pour les interfaces.",
+                "images": [
+                    "/projet04/aventure-hivernal-fond.png"
+                ]
+            }
+        ]
     }
 ]
