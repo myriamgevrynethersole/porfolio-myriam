@@ -4,6 +4,7 @@
     width: 100svw;
     height: 100svh;
     z-index: 10;
+    padding: 214px 64px 64px;
 }
 
 .Logo {
@@ -20,32 +21,35 @@
     height: 100px;
     position: fixed;
     top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 32px;
     background-color: hsla(41, 100%, 96%, 0.75);
-    
+
 }
 
 
 
 .DivTittle {
-    padding: 214px 64px 64px;
+
     height: 100%;
-    z-index: 100;
+
+    border: double 10px var(--light-green);
+    background-color: var(--white);
 
 }
 
 .Tittle {
-    border: double 10px var(--light-green);
     display: grid;
     align-content: center;
-    background-color: var(--white);
     height: 100%;
     font-family: Anak Bijak;
-    z-index: 100;
+    z-index: 1;
+
+
 
 }
 
@@ -54,6 +58,8 @@ span:nth-child(1) {
     font-size: 40px;
     text-align: right;
     line-height: 100px;
+    z-index: 1;
+
 
 }
 
@@ -63,6 +69,7 @@ span:nth-child(3) {
     text-align: left;
     line-height: 100px;
     color: var(--rust-orange);
+    z-index: 100;
 }
 
 span:nth-child(5) {
@@ -70,33 +77,40 @@ span:nth-child(5) {
     text-align: right;
     font-size: 64px;
     color: var(--rust-orange);
+    z-index: 100;
 }
 
-.images-vigne01, .images-vigne02{
+.images-vigne01,
+.images-vigne02 {
     position: absolute;
     overflow-x: hidden;
-   
+
 
 }
 
-.images-vigne01{
-   
+.images-vigne01 {
+
     height: 350px;
     right: -60px;
-    top: 80px;
+    top: -10px;
     rotate: 8deg;
     transform-origin: right;
 }
 
-.images-vigne02{
-   
+.images-vigne02 {
+
     height: 450px;
     left: -60px;
     bottom: -200px;
     rotate: 5deg;
     transform-origin: left;
 }
-.image-fond{
+
+.vignes {
+    z-index: 1;
+}
+
+.image-fond {
     overflow-x: hidden;
     z-index: -1;
     position: absolute;
