@@ -1,49 +1,88 @@
-.Liste-Projet{
+.Liste-Projet {
     position: relative;
     background-color: var(--light-green);
     height: 90vh;
 
-    
-   
-  
 
-    video{
-        width:41vw;
-        height: 40vh;
-        object-fit:cover;
-        border-radius: 15px;
+
+
+
+    video {
+        height: inherit;
+        width: inherit;
+
+        object-fit: cover;
+
     }
-    
-    
-    
+
+
+
 }
-.info{
+
+.Info-Projet {
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: 4px;
+    bottom: 0;
     left: 0;
-    width:41vw;
-    height: 20%;
+    width: 41vw;
+    height: 0;
+    overflow: hidden;
+
     background-color: #fff9ecdc;
     padding: -0px 25px;
     border-radius: 0px 0px 15px 15px;
-    color: var(--green); 
-    p{
+    color: var(--green);
+
+    p {
         border: solid 1px var(--green);
         border-radius: 50px;
         padding: 5px 10px;
     }
 }
-.Tag{
+
+.Div-Projet {
+    width: 41vw;
+    height: 40vh;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+.Div-Projet:hover {
+
+    .Info-Projet {
+        transition-duration: 0.3s;
+        overflow: hidden;
+        height: 20%;
+    }
+
+    .Titre-Projet {
+        transition-duration: 0.8s;
+        translate: 0 0;
+    }
+
+    .Tag-Projet {
+        transition-duration: 0.5s;
+        translate: 0 0;
+    }
+}
+
+.Titre-Projet {
+    translate: -125% 0;
+}
+
+.Tag-Projet {
     display: flex;
     gap: 5px;
+    translate: 125% 0;
 }
 
 
-.Projet{
-  
+.Projet {
+
     position: relative;
     width: fit-content;
 
@@ -51,7 +90,7 @@
 }
 
 .Projets-Scroller {
-    
+
     margin: 20px 5vw;
     display: flex;
     flex-direction: row;
