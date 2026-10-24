@@ -90,6 +90,9 @@ const AnimationDuLoader = () => {
         innerText: 1,
       }
     })
+      .to(scopeRef.current, {
+        display: "block"
+      }, "<")
       .fromTo(".tige", {
         drawSVG: "0%",
 

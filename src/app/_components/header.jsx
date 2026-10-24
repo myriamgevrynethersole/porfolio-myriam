@@ -18,7 +18,7 @@ const Header = () => {
     const splitChars = SplitText.create(".Tittle", {
       type: 'chars',
     });
-    
+
     const tl = gsap.timeline({
       repeat: -1,
 
@@ -44,17 +44,22 @@ const Header = () => {
 
       })
 
+    gsap.set(".Tittle", {
+      display: "grid"
+    })
+    
     gsap.fromTo(
       splitChars.chars,
       {
-        x:"80vw",
+        x: "80vw",
         ease: "power4.inOut"
       },
       {
         x: 0,
         stagger: .1
-      },">"
+      }, "<"
     )
+
 
 
 

@@ -1,8 +1,7 @@
 .Loader {
     max-height: 100vh;
     position: relative;
-
-
+    display: none;
 }
 
 .Percent-Loader {
@@ -25,6 +24,7 @@ svg {
     scale: 1.5;
     position: absolute;
     overflow: visible;
+    
 
     bottom: 75%;
     z-index: 1;

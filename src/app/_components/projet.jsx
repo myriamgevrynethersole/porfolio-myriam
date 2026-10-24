@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Projet = ({ video, titre, id, tag }) => {
     return (
-        <Link className="Projet" href={`/projets/${id}`} >
+        <Link className="Projet" href={`/${id}`} >
             <div>
                 <video src={video} autoPlay muted></video>
                 <div className="info">

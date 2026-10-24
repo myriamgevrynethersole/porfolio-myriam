@@ -1,7 +1,7 @@
-import style from "../../page.module.css"
-import projetData from "../../_data/projets.json"
-import TopPage from "../../_components/top-page"
-import ProjetDetails from "../../_components/projet-details"
+import style from "../page.module.css"
+import projetData from "../_data/projets.json"
+import TopPage from "../_components/top-page"
+import ProjetDetails from "../_components/projet-details"
 
 
 const PageProjet = async ({ params }) => {
