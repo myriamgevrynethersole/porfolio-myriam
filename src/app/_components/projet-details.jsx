@@ -5,8 +5,10 @@ import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-const ProjetDetails = ({ projet }) => {
+import { ViewTransition } from "react";
 
+
+const ProjetDetails = ({ projet }) => {
     const scopeRef = useRef();
     // const numImages = projet.slides.images.length;
     gsap.registerPlugin(useGSAP, useRef, DrawSVGPlugin, ScrollTrigger);
@@ -24,7 +26,7 @@ const ProjetDetails = ({ projet }) => {
         });
 
         const moveUpAnimation = {
-         
+
             ease: 'power1.out',
         };
         const scaleAnimation = {
@@ -34,25 +36,26 @@ const ProjetDetails = ({ projet }) => {
 
         slide.forEach((s, i) => {
             if (i === 0) {
-                 tl.to(s, scaleAnimation);
+                tl.to(s, scaleAnimation);
 
             } else if (i === slide.length - 1) {
 
-                tl.to(s,{ ...moveUpAnimation,  y: -100*i+"%", },"-=.5");
+                tl.to(s, { ...moveUpAnimation, y: -100 * i + "%", }, "-=.5");
 
             } else {
 
-                
-                tl.to(s, { ...moveUpAnimation,  y: -100*i+"%", },"-=.5");
+
+                tl.to(s, { ...moveUpAnimation, y: -100 * i + "%", }, "-=.5");
                 tl.to(s, scaleAnimation);
             }
 
         })
 
-        }, { scope: scopeRef });
+    }, { scope: scopeRef });
 
-        return (
-            <div ref={scopeRef} className="ProjetDetails">
+    return (
+        <div ref={scopeRef} className="ProjetDetails">
+            <ViewTransition name={`Video-${projet.id}`}>
                 <section className="Contexte">
                     <div className="Videos">
                         <video className="Video" src={projet.video} type="video/mp4" autoPlay muted loop></video>
@@ -68,17 +71,10 @@ const ProjetDetails = ({ projet }) => {
                         </div>
                     ))};
 
-
-                    {/* <p>{projet.approche}</p>
-            <div className="Images-Scroller">
-
-                {projet.images.map((image) => (<div key={image} ><img src={image} /></div>))}
-
-            </div> */}
-
                 </section>
-            </div>
-        );
-    };
+            </ViewTransition>
+        </div >
+    );
+};
 
-    export default ProjetDetails;
+export default ProjetDetails;

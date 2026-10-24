@@ -1,0 +1,14 @@
+.Footer{
+    background-color: var(--white);
+    height: 25vh;
+    width: 100vw;
+    padding:64px;
+    box-sizing: content-box;
+    color: var(--dark-green);
+}
+.Contactes{
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}

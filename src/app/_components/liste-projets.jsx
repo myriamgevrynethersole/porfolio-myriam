@@ -17,15 +17,14 @@ const Liste = () => {
     gsap.to(".Projets-Scroller", {
       scrollTrigger: {
         trigger: scopeRef.current,
-        markers: false,
         start: "40% center",
-        end: "+=1000% bottom",
+        end: "+=1000vh bottom",
         scrub: true,
         pin: true,
 
 
       },
-       x: -80+"vw"
+       x: -80+"vw",
     })
   }, { scope: scopeRef });
 
