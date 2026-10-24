@@ -12,11 +12,12 @@ const PageProjet = async ({ params }) => {
     return (
         <div>
             <header>
+                <div className="Background-Details"></div>
                 <TopPage />
             </header>
             {/* Affiche le projet: synthese */}
             <main className="Main-Page-Detail">
-                <h1 className="Titre-Projet">{projet.nom}</h1>
+                
                 <ProjetDetails projet={projet} />
             </main>
             <div className="Footer-Page-Detail">
