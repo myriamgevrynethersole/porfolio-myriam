@@ -53,6 +53,7 @@
     border-radius: 30px;
     padding: 50px;
     height: 600px;
+    color: var(--white);
 
 
 }
@@ -172,4 +173,7 @@
 
 
 
+}
+h3{
+    padding-bottom: 16px;
 }

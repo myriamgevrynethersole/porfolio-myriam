@@ -74,7 +74,10 @@ const ProjetDetails = ({ projet }) => {
                     <h2>Approche</h2>
                     {projet.slides.map((slide) => (
                         <div className={`Slide Slide-${slide.id}`} key={slide.id} >
-                            <p>{slide.approche}</p>
+                            <div>
+                                <h3>{slide.titre}</h3>
+                                <p>{slide.approche}</p>
+                            </div>
                             <div className="Images">{slide.images.map((image) => (<div key={image} ><img src={image} /></div>))}</div>
                         </div>
                     ))};

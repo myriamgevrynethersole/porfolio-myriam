@@ -9,6 +9,7 @@
         "slides": [
             {
                 "id": 1,
+                "titre":"L’identité graphique",
                 "approche": "Pour commencer, j’ai conçu l’identité graphique du restaurent. Pour ce faire, j’ai dû concevoir le logos du restaurent, choisir les polices de caractère ainsi que les couleurs qui devra être utiliser pour le site.",
                 "images": [
                     "/projet01/resto-charte01.jpg",
@@ -18,6 +19,7 @@
             },
             {
                 "id": 2,
+                "titre":"Les croquis",
                 "approche": "Par la suite, j’ai conçu les croquis des différents médias nécessaires à la conception du site web.",
                 "images": [
                     "/projet01/resto-croquis01.jpg",
@@ -27,6 +29,7 @@
             },
             {
                 "id": 3,
+                "titre":"Les images vectoriels",
                 "approche": "Puis, j’ai reproduit ces images en format vectoriel afin de pouvoir l’intégrer au site web",
                 "images": [
                     "/projet01/resto-resultat01.png",
@@ -45,6 +48,7 @@
         "slides": [
             {
                 "id": 1,
+                "titre":"Le personnage principal",
                 "approche": "Pour commencer, j’ai conçu le personnage principal. J’ai d’abord créé un croquis du personnage de face et de côte. Ensuite, je l’ai recréé en couleur et en format vectoriel.",
                 "images": [
                     "/projet02/brume-esquisse.jpg",
@@ -53,6 +57,7 @@
             },
             {
                 "id": 2,
+                "titre":"L'arrière-plan",
                 "approche": "Par la suite, j’ai conçu un arrière-plan qui devait faire un défilement en parallaxe. Pour ce faire j’ai d’abord créé une première version sous forme de croquis. Puis, j’ai conçu la version finale composée de cinq plans qui se répète verticalement et horizontalement. Ces plans se déplacent en parallaxe dans le jeu afin de créer une impression de profondeur.",
                 "images": [
                     "/projet02/brume-maquette-fond.jpg",
@@ -61,6 +66,7 @@
             },
             {
                 "id": 3,
+                "titre":"Les tuiles & Les objets",
                 "approche": "Finalement, j’ai conçu des tuiles intelligentes pour créer les plateformes, ainsi que des objets animés avec lesquels l’utilisateur peut interagir.",
                 "images": [
                     "/projet02/brume-tuiles.png",
@@ -79,6 +85,7 @@
         "slides": [
             {
                 "id": 1,
+                "titre":"Le \"header\"",
                 "approche": "Pour commencer, j’ai conçu deux versions UX de l’en-tête (\"header\") du site web.",
                 "images": [
                     "/projet03/rh-header-maquette-v01.png",
@@ -87,6 +94,7 @@
             },
             {
                 "id": 2,
+                "titre":"Le \"main\"",
                 "approche": "J’ai ensuite conçu deux versions UX de la section principale (\"main\") du site web.",
                 "images": [
                     "/projet03/rh-main-maquette-v01.png",
@@ -95,6 +103,7 @@
             },
             {
                 "id": 3,
+                "titre":"Le \"footer\"",
                 "approche": "J’ai également conçu deux versions UX du pied de page (\"footer\") du site web.",
                 "images": [
                     "/projet03/rh-footer-maquette-v01.png",
@@ -103,6 +112,7 @@
             },
             {
                 "id": 4,
+                "titre":"La maquette UX finale ",
                 "approche": "J’ai finalement sélectionné et combiné les meilleures versions de chaque composant afin de créer la maquette UX finale du site web.",
                 "images": [
                     "/projet03/rh-choix-final-maquette.png"
@@ -110,6 +120,7 @@
             },
             {
                 "id": 5,
+                "titre":"La maquette UI",
                 "approche": "Par la suite, j’ai ajouté les médias, les couleurs et la typographie à la maquette UX afin de créer une maquette UI qui représente plus fidèlement l’apparence du futur site web.",
                 "images": [
                     "/projet03/rh-resultat.png"
@@ -127,6 +138,7 @@
         "slides": [
             {
                 "id": 1,
+                "titre":"Le personnage principal",
                 "approche": "Pour commencer j’ai créé le personnage principal, un pingouin, que j’ai animé en fonction de la direction dans laquelle le joueur se déplace.",
                 "images": [
                     "/projet04/aventure-hivernal-perso.png"
@@ -134,6 +146,7 @@
             },
             {
                 "id": 2,
+                "titre":"L’ennemi",
                 "approche": "Par la suite, j’ai conçu et animé l’ennemi dans son état normal ainsi que dans son état de mort.",
                 "images": [
                     "/projet04/aventure-hivernal-ennemie.png"
@@ -141,6 +154,7 @@
             },
             {
                 "id": 3,
+                "titre":"Les projectiles & Les clés",
                 "approche": "Ensuite, j’ai créé les projectiles pour la première salle, pour le joueur ainsi que pour l’ennemies. Puis, j’ai créé les clés pour le casse-tête.",
                 "images": [
                     "/projet04/aventure-hivernal-projectiles.png",
@@ -149,6 +163,7 @@
             },
             {
                 "id": 4,
+                "titre":"Les tuiles intelligentes",
                 "approche": "J'ai ensuite conçu des tuiles intelligentes",
                 "images": [
                     "/projet04/aventure-hivernal-tuiles.png"
@@ -156,6 +171,7 @@
             },
             {
                 "id": 5,
+                "titre":"L'arrière-plan",
                 "approche": "Finalement, j’ai créé un arrière-plan pour les interfaces.",
                 "images": [
                     "/projet04/aventure-hivernal-fond.png"
