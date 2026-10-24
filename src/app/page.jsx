@@ -15,37 +15,52 @@ const AnimationDuLoader = () => {
   const router = useRouter();
   const scopeRef = useRef();
   const urls = [
-    "/projet01/resto-desktop-showcase.mp4",
-    "/projet01/resto-mockup.gif",
+    "/projet01/resto-charte01.jpg",
+    "/projet01/resto-charte02.jpg",
+    "/projet01/resto-charte03.jpg",
     "/projet01/resto-croquis01.jpg",
     "/projet01/resto-croquis02.jpg",
     "/projet01/resto-croquis03.jpg",
+    "/projet01/resto-desktop-showcase.mp4",
+    "/projet01/resto-mockup.gif",
     "/projet01/resto-resultat01.png",
     "/projet01/resto-resultat02.png",
-    "/projet02/brume-gameplay.mp4",
-    "/projet02/brume-mockup.gif",
-    "/projet02/brume-esquisse.jpg",
     "/projet02/brume-charte-personnage.jpg",
+    "/projet02/brume-esquisse.jpg",
+    "/projet02/brume-fond-final.jpg",
+    "/projet02/brume-gameplay.mp4",
     "/projet02/brume-maquette-fond.jpg",
-    "/projet02/brume-tuiles.png",
+    "/projet02/brume-mockup.gif",
     "/projet02/brume-objets.jpg",
-    "/projet03/rh-mockup.gif",
+    "/projet02/brume-tuiles.png",
+    "/projet03/rh-choix-final-maquette.png",
+    "/projet03/rh-footer-maquette-v01.png",
+    "/projet03/rh-footer-maquette-v02.png",
     "/projet03/rh-header-maquette-v01.png",
     "/projet03/rh-header-maquette-v02.png",
     "/projet03/rh-main-maquette-v01.png",
     "/projet03/rh-main-maquette-v02.png",
-    "/projet03/rh-footer-maquette-v01.png",
-    "/projet03/rh-footer-maquette-v02.png",
-    "/projet03/rh-choix-final-maquette.png",
+    "/projet03/rh-mockup.gif",
     "/projet03/rh-resultat.png",
+    "/projet03/rh-solutions-showcase.mp4",
+    "/projet04/aventure-hivernal-clees.png",
+    "/projet04/aventure-hivernal-ennemie.png",
+    "/projet04/aventure-hivernal-fond.png",
     "/projet04/aventure-hivernal-gameplay.mp4",
     "/projet04/aventure-hivernal-mockup.gif",
     "/projet04/aventure-hivernal-perso.png",
-    "/projet04/aventure-hivernal-ennemie.png",
-    "/projet04/aventure-hivernal-tuiles.png",
     "/projet04/aventure-hivernal-projectiles.png",
-    "/projet04/aventure-hivernal-clees.png",
-    "/projet04/aventure-hivernal-fond.png"
+    "/projet04/aventure-hivernal-fond.png",
+    "/images/png/image_moi.png",
+    "/images/svg/fond.svg",
+    "/images/svg/forme.svg",
+    "/images/svg/icone_email_background.svg",
+    "/images/svg/icone_github_background.svg",
+    "/images/svg/icone_linkedin_background.svg",
+    "/images/svg/icone_phone_background.svg",
+    "/images/svg/vigne01.svg",
+    "/images/svg/vigne02.svg",
+    "/images/svg/vigne03.svg",
   ]
 
   gsap.registerPlugin(DrawSVGPlugin);
@@ -65,7 +80,6 @@ const AnimationDuLoader = () => {
     // importer preloadMedias au prélable,
     // progress contient une valeur entre 0 et 1
     preloadMedias(urls, (progress) => {
-      console.log(progress);
       if (cancelled) return;
       limite = progress;
 

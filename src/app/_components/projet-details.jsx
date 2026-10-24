@@ -1,5 +1,6 @@
 'use client';
 import style from "./projet-details.css";
+import Link from 'next/link';
 import gsap from 'gsap';
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
@@ -10,7 +11,7 @@ import { ViewTransition } from "react";
 
 const ProjetDetails = ({ projet }) => {
     const scopeRef = useRef();
-    // const numImages = projet.slides.images.length;
+
     gsap.registerPlugin(useGSAP, useRef, DrawSVGPlugin, ScrollTrigger);
 
     useGSAP(() => {
@@ -55,15 +56,22 @@ const ProjetDetails = ({ projet }) => {
 
     return (
         <div ref={scopeRef} className="ProjetDetails">
+            <h1 className="Titre-Projet-Details">{projet.nom}</h1>
             <ViewTransition name={`Video-${projet.id}`}>
                 <section className="Contexte">
                     <div className="Videos">
-                        <video className="Video" src={projet.video} type="video/mp4" autoPlay muted loop></video>
+                        <video className="Video-Projet" src={projet.video} type="video/mp4" autoPlay muted loop></video>
                         <img className="Mockup" src={projet.mockup} type="video/gif"></img>
                     </div>
-                    <p>{projet.contexte}</p>
+                    <div className="Infos-General">
+                        <h2>Contexte</h2>
+                        <p>{projet.contexte}</p>
+                        <div className="Tag-Projet-Details">{projet.tag.map((t) => (<p key={t} >{t}</p>))}</div>
+                        <div className="Btn-Retour"><p><Link href={"/page-principale"}>Retour</Link></p></div>
+                    </div>
                 </section>
                 <section className="Approche">
+                    <h2>Approche</h2>
                     {projet.slides.map((slide) => (
                         <div className={`Slide Slide-${slide.id}`} key={slide.id} >
                             <p>{slide.approche}</p>

@@ -5,7 +5,7 @@
 
     .Image {
         height: 600px;
-        background-image: url(../../../public/images/svg/forme01.svg);
+        background-image: url(../../../public/images/svg/forme.svg);
         background-repeat: no-repeat;
         background-position: center;
         z-index: 5;
@@ -23,7 +23,7 @@
 
     .Image_Moi {
         height: inherit;
-        mask-image: url(../../../public/images/svg/forme02.svg);
+        mask-image: url(../../../public/images/svg/forme.svg);
         mask-position: center;
         mask-repeat: no-repeat;
         bottom: 0;

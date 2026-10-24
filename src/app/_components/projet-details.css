@@ -1,15 +1,27 @@
 .ProjetDetails {
+
     margin: 0px 80px;
     overflow-y: hidden;
+    color: var(--green);
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        color: var(--orange);
+    }
 
 }
 
 .Contexte {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    padding-bottom: 200px;
+
 }
-.Approche{
+
+.Approche {
     height: 100vh;
 }
 
@@ -17,10 +29,12 @@
     width: 50vw;
     position: relative;
     margin: 0px 64px;
+
 }
 
-.Video {
+.Video-Projet {
     width: 50vw;
+    border-radius: 15px;
 
 }
 
@@ -40,23 +54,23 @@
     padding: 50px;
     height: 600px;
 
-    
+
 }
 
 .Slide:nth-child(4n+1) {
-    background-color: var(--rust-orange);
+    background-color: var(--light-green);
 }
 
 .Slide:nth-child(4n+2) {
-    background-color: var(--green);
+    background-color: var(--rust-orange);
 }
 
 .Slide:nth-child(4n+3) {
-    background-color: var(--orange);
+    background-color: var(--green);
 }
 
 .Slide:nth-child(4n) {
-    background-color: var(--light-green);
+    background-color:  var(--orange); ;
 }
 
 
@@ -76,8 +90,8 @@
 
 
     img {
-        padding: 0 10px;
         width: 400px;
+        border-radius: 15px;
     }
 }
 
@@ -92,4 +106,70 @@
 .Images::-webkit-scrollbar-thumb {
     background: rgba(255, 249, 236, 0.5);
     border-radius: 999px;
+}
+
+.Footer-Page-Detail {
+    .Footer {
+        background-color: var(--light-green);
+
+    }
+}
+
+.Infos-General {
+    position: relative;
+}
+
+.Btn-Retour {
+    display: grid;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: var(--white);
+
+    p {
+
+        font-size: 24px;
+        font-weight: bold;
+        background-color: var(--green);
+        border: solid 1px var(--white);
+        border-radius: 50px;
+        padding: 10px 30px;
+        width: fit-content;
+    }
+
+    p:hover {
+        color: var(--green);
+        background-color: var(--white);
+        border: solid 1px var(--green);
+
+    }
+}
+
+
+
+
+.Tag-Projet-Details {
+    display: flex;
+    gap: 5px;
+    padding: 30px 0;
+
+
+    p {
+        border: solid 1px var(--green);
+        border-radius: 50px;
+        padding: 5px 10px;
+    }
+}
+
+.Titre-Projet-Details {
+    position: relative;
+    padding: 125px 40px 40px;
+    font-size: 100px;
+    color: #a85527;
+    z-index: 1;
+   
+
+
+
 }
