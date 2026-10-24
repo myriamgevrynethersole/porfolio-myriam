@@ -58,7 +58,7 @@ const ProjetDetails = ({ projet }) => {
             <ViewTransition name={`Video-${projet.id}`}>
                 <section className="Contexte">
                     <div className="Videos">
-                        <video className="Video" src={projet.video} type="video/mp4" autoPlay muted loop></video>
+                        <video className="Video-Projet" src={projet.video} type="video/mp4" autoPlay muted loop></video>
                         <img className="Mockup" src={projet.mockup} type="video/gif"></img>
                     </div>
                     <p>{projet.contexte}</p>

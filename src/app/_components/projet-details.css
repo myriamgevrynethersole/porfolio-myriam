@@ -9,7 +9,8 @@
     grid-template-columns: 1fr 1fr;
     height: 100vh;
 }
-.Approche{
+
+.Approche {
     height: 100vh;
 }
 
@@ -17,10 +18,12 @@
     width: 50vw;
     position: relative;
     margin: 0px 64px;
+
 }
 
-.Video {
+.Video-Projet {
     width: 50vw;
+    border-radius: 15px;
 
 }
 
@@ -40,7 +43,7 @@
     padding: 50px;
     height: 600px;
 
-    
+
 }
 
 .Slide:nth-child(4n+1) {
@@ -69,15 +72,15 @@
     overflow-y: scroll;
     scrollbar-gutter: stable both-edges;
     place-self: center;
-
+    
 
 
 
 
 
     img {
-        padding: 0 10px;
         width: 400px;
+        border-radius: 15px;
     }
 }
 
