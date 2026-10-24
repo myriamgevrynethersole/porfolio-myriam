@@ -8,7 +8,6 @@ import Footer from "../_components/footer";
 const PageProjet = async ({ params }) => {
     const { projetId } = await params;
     const projet = projetData.find((p) => p.id === projetId)
-    console.log(projet)
     return (
         <div>
             <header>
