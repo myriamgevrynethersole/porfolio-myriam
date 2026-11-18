@@ -30,55 +30,83 @@
     background-color: hsla(41, 100%, 96%, 0.75);
 
 }
- 
+
 
 
 
 .DivTittle {
     
     height: 100%;
+    width: 100%;
 
     border: double 10px var(--light-green);
     background-color: var(--white);
 
+    @media (max-width: 1200px) {}
+
 }
+
+
 
 .Tittle {
     display: none;
-    align-content: center;
+    align-content:center;
+    gap: 20px;
+    /* justify-content: center; */
     height: 100%;
     font-family: Anak Bijak;
     z-index: 1;
-
+    /* line-height: 100px; */
+     margin: 0 8%;
 
 
 }
 
 span:nth-child(1) {
-    margin-right: 300px;
-    font-size: 40px;
+    /* margin-right: 300px; */
+    font-size: 3.5vw;
     text-align: right;
-    line-height: 100px;
     z-index: 1;
 
+    @media (max-width: 1200px) {
+        font-size: 3vw;
+    }
 
+   
+
+}
+
+span:nth-child(2) {
+    /* margin-left: 300px; */
+    font-size: 15vw;
+    text-align: left;
+    color: var(--rust-orange);
+    z-index: 100;
+
+    @media (max-width: 1200px) {
+        font-size: 13vw;
+    }
+     @media (max-width: 576px) {
+         font-size: 10vw;
+    }
+
+  
 }
 
 span:nth-child(3) {
-    margin-left: 300px;
-    font-size: 200px;
-    text-align: left;
-    line-height: 100px;
-    color: var(--rust-orange);
-    z-index: 100;
-}
-
-span:nth-child(5) {
-    margin-right: 300px;
+    /* margin-top: 30px; */
     text-align: right;
-    font-size: 64px;
+    font-size: 5vw;
     color: var(--rust-orange);
     z-index: 100;
+
+    @media (max-width: 1200px) {
+        font-size: 4.5vw;
+    }
+     @media (max-width: 576px) {
+          font-size: 3.5vw;
+    }
+  
 }
 
 .images-vigne01,
@@ -116,11 +144,10 @@ span:nth-child(5) {
     z-index: -1;
     position: absolute;
     right: -25vw;
-
-    bottom: -600;
+    top: 800;
     background-image: url(../../../public/images/svg/fond.svg);
     height: 100vh;
     width: 150vw;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
 }

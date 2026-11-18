@@ -74,7 +74,7 @@ const Header = () => {
       <div className="DivTittle">
         <img className="vignes images-vigne01" src="/images/svg/vigne01.svg" alt="" />
         <img className="vignes images-vigne02" src="/images/svg/vigne02.svg" alt="" />
-        <h1 className="Tittle"><span>Porfolio de</span><br /><span>Myriam</span><br /><span>Gévry-Nethersole</span></h1>
+        <h1 className="Tittle"><span>Porfolio de</span><span>Myriam</span><span>Gévry-Nethersole</span></h1>
       </div>
       <div className="image-fond"></div>
 
